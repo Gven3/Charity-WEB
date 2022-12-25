@@ -1,0 +1,716 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* First Page! */
+
+.pageOne {
+  width: 100vw;
+  height: 100vh;
+  padding: 16px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(./images/background.png);
+  background-size: cover;
+}
+
+.nav {
+  width: 100%;
+  height: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: "Rowdies";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -1px;
+}
+
+.logo > a {
+  color: #3a1700;
+  text-decoration: none;
+}
+
+.nav_menu {
+  flex: 1;
+}
+
+.nav_menu > ul {
+  display: flex;
+  width: 35%;
+  justify-content: space-between;
+  margin-left: 58px;
+}
+
+.nav_menu > ul > li {
+  font-family: "Manrope";
+  list-style: none;
+}
+
+.nav_menu > ul > li > a {
+  color: #3a1700;
+  text-decoration: none;
+}
+
+.contact {
+  width: 140px;
+  height: 50px;
+  border: 1px solid rgba(126, 138, 184, 0.304942);
+  background-color: transparent;
+  border-radius: 24px;
+  font-family: "Rowdies";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #7e8ab8;
+  margin-left: 20px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.contact:hover {
+  background-color: #7e8ab8;
+  color: #ffffff;
+}
+
+.first_container {
+  width: 80%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.content {
+  width: 29%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.content > h1 {
+  font-family: "Rowdies";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 72px;
+  line-height: 80px;
+  letter-spacing: -3px;
+  color: #3a1700;
+}
+
+.content > p {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: rgba(58, 23, 0, 0.5);
+}
+
+.donation {
+  width: 200px;
+  height: 50px;
+  background: #7e8ab8;
+  border-radius: 24px;
+  border: none;
+  font-family: "Rowdies";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+/* Second Page! */
+
+.pageTwo {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.second_content {
+  width: 70%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.second_contentText {
+  width: 65%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.second_contentText > p {
+  font-family: "Rowdies";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #e29f72;
+}
+
+.second_contentText > h1 {
+  font-family: "Rowdies";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: -1px;
+  color: #3a1700;
+}
+
+.gridContainers {
+  margin-top: 66px;
+  width: 100%;
+  height: 80%;
+  display: grid;
+  grid-template-columns: 40% 40%;
+  grid-template-rows: 55% 55%;
+  grid-gap: 30px;
+  justify-content: center;
+}
+
+.gridContainers > div {
+  background-color: #f3f2e7;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.gridContainers > div:hover {
+  transform: translateY(-10px);
+  box-shadow: 5px 10px 10px rgba(58, 23, 0, 0.5);
+}
+
+.grid_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;
+  height: 70%;
+}
+
+.upper_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.main_content {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 20px;
+}
+
+.main_content > img {
+  padding-bottom: 35px;
+  border-bottom: 3px solid black;
+}
+
+.main_content > h2 {
+  font-family: "Rowdies";
+  padding-bottom: 35px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+  color: #3a1700;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background: #deddcd;
+}
+
+.grid_content > p {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  color: rgba(58, 23, 0, 0.5);
+}
+
+/* Third Page! */
+
+.pageThree {
+  width: 100vw;
+  height: 130vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.thirdPageContainer {
+  width: 80%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.thirdPageUpper {
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 130px;
+  gap: 18px;
+}
+
+.thirdPageUpper > p {
+  font-family: "Rowdies";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #e29f72;
+}
+
+.thirdPageUpper > h1 {
+  font-family: "Rowdies";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 56px;
+  line-height: 64px;
+  text-align: center;
+  letter-spacing: -2px;
+  color: #3a1700;
+}
+
+.thirdPageItems {
+  margin-top: 40px;
+  display: flex;
+  width: 85%;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.thirdPageItems > .firstItem,
+.secondItem,
+.thirdItem {
+  width: 30%;
+  height: 85%;
+  background: #f3f2e7;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.firstItem:hover,
+.secondItem:hover,
+.thirdItem:hover {
+  transform: translateY(-10px);
+  box-shadow: 5px 10px 10px rgba(58, 23, 0, 0.5);
+}
+
+.lowerItemContent {
+  margin-top: 24px;
+  width: 85%;
+  height: 40%;
+}
+
+.lowerItemContent > h2 {
+  font-family: "Rowdies";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+  color: #3a1700;
+}
+
+.photoDiv {
+  width: 100%;
+  height: 44%;
+  border-radius: 12px 12px 0 0;
+  padding: 27px 20px;
+}
+
+.firstItem > .photoDiv {
+  background: url(./images/water.jpg) center;
+  background-size: cover;
+}
+.secondItem > .photoDiv {
+  background: url(./images/food.jpg) center;
+  background-size: cover;
+}
+.thirdItem > .photoDiv {
+  background: url(./images/charityItem.jpg) center;
+  background-size: cover;
+}
+
+.photoDiv > p {
+  width: min-content;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #e29f72;
+  border-radius: 16px;
+  padding: 8px 12px;
+}
+
+.amount {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.amount > h3 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #3a1700;
+}
+
+.amount > p {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: right;
+  color: rgba(58, 23, 0, 0.5);
+}
+
+.completeLine {
+  margin-top: 20px;
+  width: 100%;
+  height: 8px;
+  background: #e6e4d6;
+  border-radius: 4px;
+}
+
+.firstItem > .lowerItemContent > .completeLine > .completed {
+  width: 46%;
+  height: 100%;
+  background: #2fb0ab;
+  border-radius: 4px;
+}
+
+.lowerItemContent > button {
+  margin-top: 40px;
+}
+
+.secondItem > .lowerItemContent > .completeLine > .completed {
+  width: 75%;
+  height: 100%;
+  background: #2fb0ab;
+  border-radius: 4px;
+}
+
+.thirdItem > .lowerItemContent > .completeLine > .completed {
+  width: 55%;
+  height: 100%;
+  background: #2fb0ab;
+  border-radius: 4px;
+}
+
+.explore {
+  padding: 15px 35px;
+  border: 1px solid rgba(126, 138, 184, 0.304942);
+  border-radius: 24px;
+  font-family: "Rowdies";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #7e8ab8;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.explore:hover {
+  background-color: #7e8ab8;
+  color: #ffffff;
+}
+
+.donation:hover {
+  background-color: #ffffff;
+  color: #7e8ab8;
+}
+
+/* Fourth Page! */
+
+.pageFour {
+  width: 100vw;
+  height: 160vh;
+  background-color: #f3f2e7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fourthPageContainer {
+  margin-top: 150px;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.fourthPC_content {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  height: 60%;
+  justify-content: space-between;
+  margin-top: 110px;
+}
+
+.fourthPC_content > p {
+  font-family: "Rowdies";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #e29f72;
+}
+
+.fourthPC_content > h1 {
+  font-family: "Rowdies";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: -2px;
+  color: #3a1700;
+  width: 67%;
+}
+
+.fourthPC_content > h4 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #3a1700;
+}
+
+.about {
+  width: 170px;
+  background-color: transparent;
+  border: 1px solid rgba(126, 138, 184, 0.304942);
+  border-radius: 24px;
+  font-family: "Rowdies";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #7e8ab8;
+  padding: 15px 48px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.about:hover {
+  background-color: #7e8ab8;
+  color: #ffffff;
+}
+
+.fourthPMC {
+  margin-top: 136px;
+  width: 80%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fourthPMC > h2 {
+  font-family: "Rowdies";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #3a1700;
+  width: 44%;
+}
+
+.fourthPMC_lower {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.fourthPMC_lower > div {
+  width: 28%;
+  height: 60%;
+  background-color: #ffffff;
+  border-radius: 12px;
+  display: flex;
+  padding-left: 30px;
+  align-items: center;
+  gap: 24px;
+}
+
+.fourthPMC_lower > div > h1 {
+  font-family: "Rowdies";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: -2px;
+  color: #3a1700;
+}
+
+.lower_columnDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+.lower_columnDiv > h4 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #3a1700;
+}
+
+.lower_columnDiv > p {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: rgba(58, 23, 0, 0.5);
+}
+
+/* Fifth Page! */
+
+.pageFive {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #f3f2e7;
+}
+
+.fifthPageContainer {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.fifthPageContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 33%;
+  height: 53%;
+}
+
+.fifthPageContent > p {
+  font-family: "Rowdies";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #e29f72;
+}
+
+.fifthPageContent > h1 {
+  font-family: "Rowdies";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: -2px;
+  color: #3a1700;
+}
+
+.fifthPageContent > h3 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #3a1700;
+}
+
+.volunteer {
+  border: 1px solid rgba(126, 138, 184, 0.304942);
+  border-radius: 24px;
+  font-family: "Rowdies";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #7e8ab8;
+  padding: 15px 38px;
+  background-color: transparent;
+  width: 200px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.volunteer:hover {
+  background-color: #7e8ab8;
+  color: #ffffff;
+}
