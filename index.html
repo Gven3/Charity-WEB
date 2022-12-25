@@ -18,23 +18,6 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap"
       rel="stylesheet"
     />
-
-    <style>
-      ::-webkit-scrollbar{
-        width: 10px;
-      }
-
-      ::-webkit-scrollbar-thumb{
-        background-color: #7E8AB8;
-        border-radius: 30px;
-        margin-left: 5px;
-      }
-      
-      ::-webkit-scrollbar-track{
-        box-shadow: inset 0 0 10px #7E8AB8;
-        background-color: #F2F2F2;
-      }
-    </style>
   </head>
   <body>
     <section class="pageOne">
@@ -43,8 +26,8 @@
         <h1 class="logo"><a href="#">CHA</a></h1>
         <div class="nav_menu">
           <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#thirdPageContainer">Causes</a></li>
+            <li><a href="#fourthPageContainer">About</a></li>
+            <li><a href="#thirdPageItems">Causes</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Events</a></li>
             <li><a href="#">Blogs</a></li>
@@ -126,7 +109,7 @@
           <p>Our Cases</p>
           <h1>Our Recent Causes</h1>
         </div>
-        <div class="thirdPageItems">
+        <div class="thirdPageItems" id="thirdPageItems">
           <!-- First Item -->
           <div class="firstItem">
             <div class="photoDiv">
@@ -183,7 +166,7 @@
       </div>
     </section>
     <section class="pageFour">
-      <div class="fourthPageContainer">
+      <div class="fourthPageContainer" id="fourthPageContainer">
           <img src="./images/pic.png" alt="pic">
           <div class="fourthPC_content">
             <p>about us</p>
@@ -233,5 +216,43 @@
 
       </div>
     </section>
+    <section class="pageSix">
+      <div class="pageSixContainer">
+        <p>Our Services</p>
+        <h1>Services We Provide</h1>
+        <div class="pageSC_items">
+          <div>
+            <div class="pageSFI_header">
+              <img src="./images/charity1.svg" alt="charity">
+              <h2>Charity</h2>
+            </div>
+            <div class="line"></div>
+            <p>A charity must have one or more of the purposes which have been defined in law.</p>
+            <button class="donation">learn more</button>
+          </div>
+          <div>
+            <div class="pageSFI_header">
+            <img src="./images/fruit.svg" alt="charity">
+            <h2>Food</h2>
+          </div>
+          <div class="line"></div>
+          <p>These include things like: relieving poverty, education, religion, protecting the environment.</p>
+          <button class="donation">learn more</button>
+        </div>
+          <div>
+            <div class="pageSFI_header">
+            <img src="./images/water-tap.svg" alt="charity">
+            <h2>water</h2>
+          </div>
+          <div class="line"></div>
+          <p>Education, environment, animal welfare, human rights and community development.</p>
+          <button class="donation">learn more</button>
+        </div>
+      </div>
+      </div>
+      <button class="explore">explore all</button>
+    </section>
+
+    <script src="./script.js"></script>
   </body>
 </html>
