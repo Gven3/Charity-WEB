@@ -333,7 +333,7 @@ body {
 .secondItem,
 .thirdItem {
   width: 30%;
-  height: 88%;
+  height: 90%;
   background: #f3f2e7;
   border-radius: 12px;
   display: flex;
@@ -595,7 +595,7 @@ body {
 
 .fourthPMC_lower > div {
   width: 28%;
-  height: 60%;
+  height: 145px;
   background-color: #ffffff;
   border-radius: 12px;
   display: flex;
