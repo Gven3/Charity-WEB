@@ -107,11 +107,11 @@ body {
 }
 
 .first_container {
-  width: 80%;
+  width: 94%;
   height: 90%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
@@ -172,6 +172,12 @@ body {
   justify-content: center;
 }
 
+.pageTwo > img {
+  position: absolute;
+  left: 300px;
+  top: 1075px;
+}
+
 .second_content {
   width: 70%;
   height: 90%;
@@ -220,6 +226,7 @@ body {
   grid-template-rows: 55% 55%;
   grid-gap: 30px;
   justify-content: center;
+  z-index: 1;
 }
 
 .gridContainers > div {
@@ -831,4 +838,166 @@ body {
 .pageSC_items button {
   margin-top: 40px;
   width: 170px;
+}
+
+/* Seventh Page! */
+
+.pageSeven {
+  width: 100vw;
+  height: 130vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pageSeven > p {
+  font-family: "Rowdies";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #e29f72;
+  margin-top: 70px;
+}
+
+.pageSeven > h1 {
+  font-family: "Rowdies";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 56px;
+  line-height: 64px;
+  text-align: center;
+  letter-spacing: -2px;
+  color: #3a1700;
+}
+
+.videoDiv {
+  height: 65%;
+  width: 100%;
+  margin-top: 70px;
+  display: flex;
+}
+
+.video1 {
+  position: relative;
+  top: 60px;
+  left: -10px;
+  width: 16%;
+  height: 30%;
+  background: #d8d8d8;
+  border-radius: 12px;
+}
+
+.video2 {
+  position: relative;
+  top: 330px;
+  left: -70px;
+  width: 20%;
+  height: 34%;
+  background: #d8d8d8;
+  border-radius: 12px;
+}
+
+.video3 {
+  width: 34%;
+  height: 48.5%;
+  background: transparent;
+  border-radius: 12px;
+}
+
+.video3 > video {
+  border-radius: 12px;
+}
+
+.video4 {
+  position: relative;
+  left: 30px;
+  top: 140px;
+  width: 10%;
+  height: 19%;
+  background: #d8d8d8;
+  border-radius: 12px;
+}
+
+.video5 {
+  position: relative;
+  top: 330px;
+  left: 70px;
+  width: 16%;
+  height: 30%;
+  background: #d8d8d8;
+  border-radius: 12px;
+}
+
+/* Eighth Page! */
+
+.pageEight {
+  width: 100vw;
+  height: 40vh;
+  background: url(./images/block.png) center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pageEightContainer {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pageEC_text > h1 {
+  font-family: "Rowdies";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: -2px;
+  color: #ffffff;
+}
+
+.pageEC_text > p {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: rgba(255, 255, 255, 0.502972);
+  width: 76%;
+}
+
+.pageEC_buttons {
+  display: flex;
+  gap: 30px;
+}
+
+.pageEC_buttons > .donation {
+  background-color: #ffb200;
+}
+
+.pageEC_buttons > .donation:hover {
+  background: #ffffff;
+  color: #ffb200;
+}
+
+.pageEC_buttons > .contact {
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.295743);
+  border-radius: 24px;
+}
+
+.pageEC_buttons > .contact:hover {
+  background: rgba(255, 255, 255, 0.295743);
+}
+
+/* Ninth Page! */
+
+.pageNine {
+  width: 100vw;
+  height: 100vh;
 }
