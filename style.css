@@ -44,7 +44,7 @@ body {
 
 .pageOne {
   width: 100vw;
-  height: 100vh;
+  /* height: 100vh; */
   padding: 16px 32px;
   display: flex;
   flex-direction: column;
@@ -178,7 +178,7 @@ body {
 
 .pageTwo {
   width: 100vw;
-  height: 100vh;
+  /* height: 100vh; */
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -243,6 +243,7 @@ body {
   justify-content: center;
   align-items: center;
   transition: 0.5s;
+  padding-bottom: 20px;
 }
 
 .gridContainers > div:hover {
@@ -306,7 +307,7 @@ body {
 
 .pageThree {
   width: 100vw;
-  height: 130vh;
+  /* height: 130vh; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -319,6 +320,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 110px;
+}
+
+.thirdPageContainer > .explore {
+  margin-top: 64px;
 }
 
 .thirdPageUpper {
@@ -525,7 +531,7 @@ body {
 
 .pageFour {
   width: 100vw;
-  height: 160vh;
+  /* height: 160vh; */
   background-color: #f3f2e7;
   display: flex;
   flex-direction: column;
@@ -670,7 +676,7 @@ body {
   display: flex;
   justify-content: center;
   width: 100vw;
-  height: 130vh;
+  /* height: 130vh; */
   background-color: #f3f2e7;
 }
 
@@ -679,6 +685,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin-top: 156px;
 }
 
 .fifthPageContent {
@@ -735,7 +742,7 @@ body {
 
 .pageSix {
   width: 100vw;
-  height: 110vh;
+  /* height: 110vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
