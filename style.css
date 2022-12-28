@@ -44,12 +44,11 @@ body {
 
 .pageOne {
   width: 100vw;
-  /* height: 100vh; */
-  padding: 16px 32px;
+  padding: 16px 32px 126px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url(./images/background.png);
+  background: url(./images/background.png);
   background-size: cover;
 }
 
@@ -86,12 +85,12 @@ body {
   margin-left: 58px;
 }
 
-.nav_menu > ul > li {
+ul > li {
   font-family: "Manrope";
   list-style: none;
 }
 
-.nav_menu > ul > li > a {
+ul > li > a {
   color: #3a1700;
   text-decoration: none;
 }
@@ -122,7 +121,7 @@ body {
 
 .first_container {
   width: 94%;
-  height: 90%;
+  height: 90vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -178,7 +177,6 @@ body {
 
 .pageTwo {
   width: 100vw;
-  /* height: 100vh; */
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -309,7 +307,6 @@ body {
 
 .pageThree {
   width: 100vw;
-  /* height: 130vh; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -362,7 +359,7 @@ body {
 .thirdPageItems > .firstItem,
 .secondItem,
 .thirdItem {
-  width: 30%;
+  width: 31.5%;
   height: 560px;
   background: #f3f2e7;
   border-radius: 12px;
@@ -534,7 +531,6 @@ body {
 
 .pageFour {
   width: 100vw;
-  /* height: 160vh; */
   background-color: #f3f2e7;
   display: flex;
   flex-direction: column;
@@ -679,7 +675,6 @@ body {
   display: flex;
   justify-content: center;
   width: 100vw;
-  /* height: 130vh; */
   background-color: #f3f2e7;
   padding-bottom: 176px;
 }
@@ -746,7 +741,6 @@ body {
 
 .pageSix {
   width: 100vw;
-  /* height: 110vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -914,14 +908,12 @@ body {
 
 .pageEight {
   width: 100vw;
-  /* height: 40vh; */
   background: url(./images/block.png) center;
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 90px;
-  padding-bottom: 66px;
+  padding: 90px 0 66px 0;
 }
 
 .pageEightContainer {
@@ -1198,20 +1190,20 @@ body {
   color: rgba(58, 23, 0, 0.5);
 }
 
-.pageTI_lower > h2 > span {
-  border-bottom: 3px solid #333333;
-  padding-bottom: 32px;
+.line {
+  display: flex;
 }
 
-.pageTen > .explore {
-  margin-top: 50px;
+.line > .smallLine {
+  width: 64px;
+  height: 3px;
+  background: #333333;
 }
 
 /* Eleventh Page! */
 
 .pageEleven {
   width: 100vw;
-  /* height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1220,7 +1212,6 @@ body {
 
 .pageElevenContainer {
   width: 80%;
-  /* height: 80vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1272,7 +1263,7 @@ body {
   line-height: 32px;
   text-align: center;
   color: #3a1700;
-  width: 72%;
+  width: 90%;
 }
 
 .pageEB_lower {
@@ -1350,4 +1341,313 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-top: 130px;
+}
+
+/* Twelvth Page! */
+
+.pageTwelve {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 80px;
+}
+
+.pageTwelve > .explore {
+  margin-top: 64px;
+}
+
+.pageTwelveContainer {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 140px;
+}
+
+.pageTwelveContainer > h1 {
+  font-family: "Rowdies";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: -2px;
+  color: #3a1700;
+}
+
+.pageTwelveItems {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+}
+
+.pageTwelveItems > div {
+  width: 31%;
+  height: 464px;
+  background-color: #f3f2e7;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pageTI_photo {
+  width: 100%;
+  height: 50%;
+  border-radius: 12px 12px 0 0;
+  background: #bfbfbf;
+  padding: 27px 24px;
+}
+
+.pageTI_lower {
+  margin-top: 40px;
+}
+
+.pageTwelveLowItem {
+  width: 100%;
+  height: 160px;
+  background: #f3f2e7;
+  border-radius: 12px;
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  padding: 0 48px 0 48px;
+  justify-content: space-between;
+}
+
+.pageTLI_text > h2 {
+  font-family: "Rowdies";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -1px;
+  color: #3a1700;
+}
+
+.pageTLI_text > p {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: rgba(58, 23, 0, 0.5);
+}
+
+.pageT_buttons {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.pageT_buttons > input {
+  width: 270px;
+  height: 50px;
+  background: #ffffff;
+  border: 1px solid #dadada;
+  border-radius: 24px;
+  padding: 9px 24px;
+}
+
+.pageEC_buttons > .donation {
+  width: 170px;
+}
+
+/* Thirteenth Page! */
+
+.pageThirteen {
+  width: 100vw;
+  background: url(./images/lastBcg.png) center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 72px;
+}
+
+.pageThirteenContainer {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  justify-content: space-between;
+}
+
+.pageTC_text {
+  width: 38%;
+}
+
+.pageTC_text > h1 {
+  font-family: "Rowdies";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: -2px;
+  color: #3a1700;
+  margin-top: 18px;
+}
+
+.pageTC_text > .lowText {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: rgba(58, 23, 0, 0.5);
+  margin-top: 30px;
+}
+
+.pageTC_text > .explore {
+  width: 200px;
+}
+
+/* Fourteenth Page! */
+
+.pageFourteen {
+  width: 100vw;
+  display: flex;
+}
+
+.pageFourteen > div {
+  width: 34%;
+  height: 192px;
+  display: flex;
+  align-items: center;
+  padding-left: 48px;
+  gap: 32px;
+}
+
+.phone {
+  background: #eae9da;
+}
+
+.icon {
+  width: 96px;
+  height: 96px;
+}
+
+.pageF_content > p {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: rgba(58, 23, 0, 0.5);
+}
+.pageF_content > h4 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #3a1700;
+}
+
+.mail {
+  background: #e3e1cb;
+}
+
+.address {
+  background: #cbc8ad;
+}
+
+/* Fifteenth Page! */
+
+.pageFifteen {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #d58e5e;
+  padding-bottom: 54px;
+}
+
+.pageFifteenContainer {
+  width: 80%;
+  display: flex;
+  margin-top: 76px;
+  border-bottom: 1px solid #ffffffa1;
+  padding-bottom: 70px;
+}
+
+.pageFC_content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pageFC_content > h1 {
+  font-family: "Rowdies";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -1px;
+  color: #ffffff;
+}
+
+.middleLeft > p,
+.middleRight > p {
+  font-family: "Rowdies";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.middleLeft > ul,
+.middleRight > ul {
+  margin-top: 16px;
+}
+
+.middleLeft > ul > li > a,
+.middleRight > ul > li > a {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #ffffff;
+}
+
+.social {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  height: 46px;
+}
+
+.pageFifteenLower {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.pageFifteenLower > p {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: rgba(255, 255, 255, 0.502972);
+}
+
+.privacy {
+  display: flex;
+  gap: 72px;
+}
+
+.privacy > p {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: right;
+  color: #ffffff;
 }
