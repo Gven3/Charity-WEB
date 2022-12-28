@@ -188,16 +188,17 @@ body {
 
 .pageTwo > img {
   position: absolute;
-  left: 300px;
-  top: 1075px;
+  left: 360px;
+  top: 1200px;
 }
 
 .second_content {
   width: 70%;
-  height: 90%;
+  /* height: 90%; */
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 120px;
 }
 
 .second_contentText {
@@ -226,7 +227,7 @@ body {
 .gridContainers {
   margin-top: 66px;
   width: 100%;
-  height: 80%;
+  /* height: 80%; */
   display: grid;
   grid-template-columns: 40% 40%;
   grid-template-rows: 55% 55%;
@@ -243,7 +244,8 @@ body {
   justify-content: center;
   align-items: center;
   transition: 0.5s;
-  padding-bottom: 20px;
+  padding-top: 36px;
+  padding-bottom: 36px;
 }
 
 .gridContainers > div:hover {
@@ -515,6 +517,7 @@ body {
   background-color: transparent;
   cursor: pointer;
   transition: 0.5s;
+  margin-top: 50px;
 }
 
 .explore:hover {
@@ -678,6 +681,7 @@ body {
   width: 100vw;
   /* height: 130vh; */
   background-color: #f3f2e7;
+  padding-bottom: 176px;
 }
 
 .fifthPageContainer {
@@ -747,6 +751,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-bottom: 140px;
 }
 
 .pageSixContainer {
@@ -755,6 +760,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 18px;
+  margin-top: 138px;
 }
 
 .pageSixContainer > h1 {
@@ -908,12 +914,14 @@ body {
 
 .pageEight {
   width: 100vw;
-  height: 40vh;
+  /* height: 40vh; */
   background: url(./images/block.png) center;
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 90px;
+  padding-bottom: 66px;
 }
 
 .pageEightContainer {
@@ -1053,6 +1061,10 @@ body {
   margin-top: 20px;
   justify-content: space-between;
   align-items: center;
+}
+
+.pageNIC_lower > .explore {
+  margin-top: 0;
 }
 
 .pageNICL_left > h4 {
@@ -1199,7 +1211,7 @@ body {
 
 .pageEleven {
   width: 100vw;
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1208,11 +1220,12 @@ body {
 
 .pageElevenContainer {
   width: 80%;
-  height: 80%;
+  /* height: 80vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 140px;
+  padding-bottom: 94px;
 }
 
 .pageElevenContainer > h1 {
@@ -1227,17 +1240,114 @@ body {
 }
 
 .pageElevenBox {
-  width: 70%;
-  height: 70%;
+  width: 65%;
+  height: 60%;
   background: #ffffff;
   border-radius: 12px;
   margin-top: 70px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 40px;
 }
 
 .shape {
   position: relative;
   top: -24px;
+}
+
+.pageEB_text {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.pageEB_text > h2 {
+  font-family: "Rowdies";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #3a1700;
+  width: 72%;
+}
+
+.pageEB_lower {
+  width: 80%;
+  margin-top: 38px;
+  display: flex;
+  flex-direction: column;
+}
+
+.pageEB_lower > .line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pageEB_lower > .line > .smallLine {
+  width: 64px;
+  height: 3px;
+  background-color: #333333;
+}
+
+.circles {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.circles > .smallCircle {
+  width: 40px;
+  height: 40px;
+  background-color: #f3f2e781;
+  border-radius: 50%;
+}
+
+.bigCircle {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: #d8d8d8;
+}
+
+.pageEB_lower > h3 {
+  font-family: "Rowdies";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #3a1700;
+  margin-top: 8px;
+}
+
+.pageElevenButtons {
+  display: flex;
+  gap: 8px;
+  margin-top: 32px;
+}
+
+.pageElevenButtons > button {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid rgba(126, 138, 184, 0.304942);
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.companies {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 130px;
 }
