@@ -26,6 +26,20 @@ body {
   background-color: transparent;
 }
 
+/* Styles */
+
+.goldText {
+  font-family: "Rowdies";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: start;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #e29f72;
+}
+
 /* First Page! */
 
 .pageOne {
@@ -194,16 +208,8 @@ body {
   justify-content: space-between;
 }
 
-.second_contentText > p {
-  font-family: "Rowdies";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 32px;
+.second_contentText > .goldText {
   text-align: center;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: #e29f72;
 }
 
 .second_contentText > h1 {
@@ -322,17 +328,8 @@ body {
   margin-top: 130px;
   gap: 18px;
 }
-
-.thirdPageUpper > p {
-  font-family: "Rowdies";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 32px;
+.thirdPageUpper > .goldText {
   text-align: center;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: #e29f72;
 }
 
 .thirdPageUpper > h1 {
@@ -407,6 +404,20 @@ body {
 .thirdItem > .photoDiv {
   background: url(./images/charityItem.jpg) center;
   background-size: cover;
+}
+
+.water {
+  width: min-content;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #e29f72;
+  border-radius: 16px;
+  padding: 8px 12px;
 }
 
 .photoDiv > p {
@@ -535,17 +546,6 @@ body {
   height: 60%;
   justify-content: space-between;
   margin-top: 110px;
-}
-
-.fourthPC_content > p {
-  font-family: "Rowdies";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 32px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: #e29f72;
 }
 
 .fourthPC_content > h1 {
@@ -689,17 +689,6 @@ body {
   height: 53%;
 }
 
-.fifthPageContent > p {
-  font-family: "Rowdies";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 32px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: #e29f72;
-}
-
 .fifthPageContent > h1 {
   font-family: "Rowdies";
   font-style: normal;
@@ -759,17 +748,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 18px;
-}
-
-.pageSixContainer > p {
-  font-family: "Rowdies";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 32px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: #e29f72;
 }
 
 .pageSixContainer > h1 {
@@ -848,19 +826,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.pageSeven > p {
-  font-family: "Rowdies";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 32px;
-  text-align: center;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: #e29f72;
-  margin-top: 70px;
 }
 
 .pageSeven > h1 {
@@ -999,5 +964,273 @@ body {
 
 .pageNine {
   width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pageNineContainer {
+  width: 80%;
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pageNineContainer > .explore {
+  margin-top: 50px;
+}
+
+.pageNineContainer > .goldText {
+  text-align: center;
+}
+
+.pageNineContainer > h1 {
+  font-family: "Rowdies";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 56px;
+  line-height: 64px;
+  text-align: center;
+  letter-spacing: -2px;
+  color: #3a1700;
+  margin-top: 15px;
+}
+
+.pageNineItems {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 70px;
+}
+
+.pageNineItems > div {
+  width: 100%;
+  background: #f3f2e7;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pageNineItems > div > .pageNineItems_main {
+  width: 33%;
+  height: 210px;
+  border-radius: 12px 0px 0px 12px;
+  background: #d8d8d8;
+  padding: 30px 22px;
+}
+
+.pageNI_content {
+  width: 63%;
+  display: flex;
+  flex-direction: column;
+}
+
+.pageNI_content > h1 {
+  font-family: "Rowdies";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+  color: #3a1700;
+  width: 64%;
+  border-bottom: 1px solid #deddcd;
+  padding-bottom: 25px;
+}
+
+.pageNIC_lower {
+  width: 95%;
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pageNICL_left > h4 {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #3a1700;
+}
+
+.pageNICL_left > h4 > span {
+  border-top: 3px solid #333333;
+  padding-top: 30px;
+}
+
+.pageNIC_lower > .explore {
+  width: 140px;
+  height: 50px;
+  background: #7e8ab8;
+  border-radius: 24px;
+  border: none;
+  color: white;
+}
+
+.pageNIC_lower > .explore:hover {
+  background-color: white;
+  color: #7e8ab8;
+}
+
+/* Tenth Page! */
+
+.pageTen {
+  width: 100vw;
+  background: #f3f2e7;
+  margin-top: 116px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pageTenContainer {
+  width: 80%;
+  margin-top: 90px;
+  display: flex;
+  flex-direction: column;
+}
+
+.pageTC_header {
+  display: flex;
+  flex-direction: column;
+}
+
+.pageTC_header > h1 {
+  font-family: "Rowdies";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: -2px;
+  color: #3a1700;
+}
+
+.pageTenItems {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+}
+
+.pageTenItems > div {
+  width: 22%;
+  height: 370px;
+  background: #ffffff;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pageTenItems > div > .pageTenItem {
+  width: 100%;
+  height: 55%;
+  border-radius: 12px 12px 0 0;
+  background-color: #2fb0ab;
+}
+
+#giorgi {
+  background: url(./images/giorgi.jpg) center;
+  background-size: cover;
+}
+
+#nika {
+  background: url(./images/nika.png) center;
+  background-size: cover;
+}
+
+#valeri {
+  background: url(./images/valeri.png) center;
+  background-size: cover;
+}
+
+#dead {
+  background: url(./images/death.jpg) center;
+  background-size: cover;
+}
+
+.pageTI_lower {
+  width: 80%;
+  height: 44%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.pageTI_lower > h2 {
+  font-family: "Rowdies";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+  color: #3a1700;
+}
+
+.pageTI_lower > p {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: rgba(58, 23, 0, 0.5);
+}
+
+.pageTI_lower > h2 > span {
+  border-bottom: 3px solid #333333;
+  padding-bottom: 32px;
+}
+
+.pageTen > .explore {
+  margin-top: 50px;
+}
+
+/* Eleventh Page! */
+
+.pageEleven {
+  width: 100vw;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f3f2e7;
+}
+
+.pageElevenContainer {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 140px;
+}
+
+.pageElevenContainer > h1 {
+  font-family: "Rowdies";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 56px;
+  line-height: 64px;
+  text-align: center;
+  letter-spacing: -2px;
+  color: #3a1700;
+}
+
+.pageElevenBox {
+  width: 70%;
+  height: 70%;
+  background: #ffffff;
+  border-radius: 12px;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shape {
+  position: relative;
+  top: -24px;
 }
