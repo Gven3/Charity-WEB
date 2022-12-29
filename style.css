@@ -40,6 +40,35 @@ body {
   color: #e29f72;
 }
 
+.h1Text {
+  font-family: "Rowdies";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: -2px;
+  color: #3a1700;
+}
+
+.explore {
+  width: 170px;
+  padding: 15px 35px;
+  border: 1px solid rgba(126, 138, 184, 0.304942);
+  border-radius: 24px;
+  font-family: "Rowdies";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #7e8ab8;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.5s;
+  margin-top: 50px;
+}
+
 /* First Page! */
 
 .pageOne {
@@ -137,13 +166,7 @@ ul > li > a {
 }
 
 .content > h1 {
-  font-family: "Rowdies";
-  font-style: normal;
-  font-weight: 300;
   font-size: 72px;
-  line-height: 80px;
-  letter-spacing: -3px;
-  color: #3a1700;
 }
 
 .content > p {
@@ -192,7 +215,6 @@ ul > li > a {
 
 .second_content {
   width: 70%;
-  /* height: 90%; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -212,20 +234,14 @@ ul > li > a {
 }
 
 .second_contentText > h1 {
-  font-family: "Rowdies";
-  font-style: normal;
-  font-weight: 300;
   font-size: 40px;
-  line-height: 48px;
   text-align: center;
-  letter-spacing: -1px;
-  color: #3a1700;
+  line-height: 48px;
 }
 
 .gridContainers {
   margin-top: 66px;
   width: 100%;
-  /* height: 80%; */
   display: grid;
   grid-template-columns: 40% 40%;
   grid-template-rows: 55% 55%;
@@ -338,14 +354,7 @@ ul > li > a {
 }
 
 .thirdPageUpper > h1 {
-  font-family: "Rowdies";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 56px;
-  line-height: 64px;
   text-align: center;
-  letter-spacing: -2px;
-  color: #3a1700;
 }
 
 .thirdPageItems {
@@ -359,7 +368,7 @@ ul > li > a {
 .thirdPageItems > .firstItem,
 .secondItem,
 .thirdItem {
-  width: 31.5%;
+  width: 32%;
   height: 560px;
   background: #f3f2e7;
   border-radius: 12px;
@@ -481,7 +490,7 @@ ul > li > a {
 }
 
 .lowerItemContent > button {
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 .secondItem > .lowerItemContent > .completeLine > .completed {
@@ -496,25 +505,6 @@ ul > li > a {
   height: 100%;
   background: #2fb0ab;
   border-radius: 4px;
-}
-
-.explore {
-  width: 170px;
-  padding: 15px 35px;
-  border: 1px solid rgba(126, 138, 184, 0.304942);
-  border-radius: 24px;
-  font-family: "Rowdies";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #7e8ab8;
-  background-color: transparent;
-  cursor: pointer;
-  transition: 0.5s;
-  margin-top: 50px;
 }
 
 .explore:hover {
@@ -554,13 +544,8 @@ ul > li > a {
 }
 
 .fourthPC_content > h1 {
-  font-family: "Rowdies";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 56px;
   line-height: 64px;
   letter-spacing: -2px;
-  color: #3a1700;
   width: 67%;
 }
 
@@ -571,6 +556,7 @@ ul > li > a {
   font-size: 20px;
   line-height: 32px;
   color: #3a1700;
+  margin-top: 30px;
 }
 
 .about {
@@ -589,6 +575,7 @@ ul > li > a {
   padding: 15px 48px;
   transition: 0.5s;
   cursor: pointer;
+  margin-top: 30px;
 }
 
 .about:hover {
@@ -634,16 +621,6 @@ ul > li > a {
   padding-left: 30px;
   align-items: center;
   gap: 24px;
-}
-
-.fourthPMC_lower > div > h1 {
-  font-family: "Rowdies";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 56px;
-  line-height: 64px;
-  letter-spacing: -2px;
-  color: #3a1700;
 }
 
 .lower_columnDiv {
@@ -695,16 +672,6 @@ ul > li > a {
   height: 53%;
 }
 
-.fifthPageContent > h1 {
-  font-family: "Rowdies";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 56px;
-  line-height: 64px;
-  letter-spacing: -2px;
-  color: #3a1700;
-}
-
 .fifthPageContent > h3 {
   font-family: "Manrope";
   font-style: normal;
@@ -712,6 +679,7 @@ ul > li > a {
   font-size: 20px;
   line-height: 32px;
   color: #3a1700;
+  margin-top: 30px;
 }
 
 .volunteer {
@@ -730,6 +698,7 @@ ul > li > a {
   width: 200px;
   transition: 0.5s;
   cursor: pointer;
+  margin-top: 34px;
 }
 
 .volunteer:hover {
@@ -755,16 +724,6 @@ ul > li > a {
   flex-direction: column;
   gap: 18px;
   margin-top: 138px;
-}
-
-.pageSixContainer > h1 {
-  font-family: "Rowdies";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 56px;
-  line-height: 64px;
-  letter-spacing: -2px;
-  color: #3a1700;
 }
 
 .pageSC_items {
@@ -836,14 +795,7 @@ ul > li > a {
 }
 
 .pageSeven > h1 {
-  font-family: "Rowdies";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 56px;
-  line-height: 64px;
   text-align: center;
-  letter-spacing: -2px;
-  color: #3a1700;
 }
 
 .videoDiv {
@@ -924,12 +876,6 @@ ul > li > a {
 }
 
 .pageEC_text > h1 {
-  font-family: "Rowdies";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 56px;
-  line-height: 64px;
-  letter-spacing: -2px;
   color: #ffffff;
 }
 
@@ -993,14 +939,7 @@ ul > li > a {
 }
 
 .pageNineContainer > h1 {
-  font-family: "Rowdies";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 56px;
-  line-height: 64px;
   text-align: center;
-  letter-spacing: -2px;
-  color: #3a1700;
   margin-top: 15px;
 }
 
@@ -1110,16 +1049,6 @@ ul > li > a {
   flex-direction: column;
 }
 
-.pageTC_header > h1 {
-  font-family: "Rowdies";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 56px;
-  line-height: 64px;
-  letter-spacing: -2px;
-  color: #3a1700;
-}
-
 .pageTenItems {
   width: 80%;
   display: flex;
@@ -1128,7 +1057,7 @@ ul > li > a {
 }
 
 .pageTenItems > div {
-  width: 22%;
+  width: 23%;
   height: 370px;
   background: #ffffff;
   border-radius: 12px;
@@ -1220,14 +1149,7 @@ ul > li > a {
 }
 
 .pageElevenContainer > h1 {
-  font-family: "Rowdies";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 56px;
-  line-height: 64px;
   text-align: center;
-  letter-spacing: -2px;
-  color: #3a1700;
 }
 
 .pageElevenBox {
@@ -1364,16 +1286,6 @@ ul > li > a {
   margin-top: 140px;
 }
 
-.pageTwelveContainer > h1 {
-  font-family: "Rowdies";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 56px;
-  line-height: 64px;
-  letter-spacing: -2px;
-  color: #3a1700;
-}
-
 .pageTwelveItems {
   width: 100%;
   display: flex;
@@ -1478,13 +1390,6 @@ ul > li > a {
 }
 
 .pageTC_text > h1 {
-  font-family: "Rowdies";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 56px;
-  line-height: 64px;
-  letter-spacing: -2px;
-  color: #3a1700;
   margin-top: 18px;
 }
 
