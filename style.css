@@ -150,11 +150,16 @@ ul > li > a {
 
 .first_container {
   width: 94%;
-  height: 90vh;
+  /* height: 90vh; */
   display: flex;
   align-items: center;
   justify-content: space-around;
-  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.firstImage {
+  width: auto;
+  height: auto;
 }
 
 .content {
@@ -176,6 +181,25 @@ ul > li > a {
   font-size: 16px;
   line-height: 32px;
   color: rgba(58, 23, 0, 0.5);
+}
+
+.menu {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px solid rgba(126, 138, 184, 0.304942);
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.menu > div {
+  width: 20px;
+  height: 2px;
+  background: #7e8ab8;
 }
 
 .donation {
@@ -223,7 +247,7 @@ ul > li > a {
 
 .second_contentText {
   width: 65%;
-  height: 30%;
+  /* height: 30%; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -244,7 +268,7 @@ ul > li > a {
   width: 100%;
   display: grid;
   grid-template-columns: 40% 40%;
-  grid-template-rows: 55% 55%;
+  grid-template-rows: 280px 280px;
   grid-gap: 30px;
   justify-content: center;
   z-index: 1;
@@ -272,7 +296,6 @@ ul > li > a {
   flex-direction: column;
   justify-content: space-between;
   width: 80%;
-  height: 70%;
 }
 
 .upper_content {
@@ -331,10 +354,11 @@ ul > li > a {
 
 .thirdPageContainer {
   width: 80%;
-  height: 90%;
+  /* height: 90%; */
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding-bottom: 110px;
 }
 
@@ -361,7 +385,7 @@ ul > li > a {
   margin-top: 40px;
   display: flex;
   width: 85%;
-  height: 100%;
+  /* height: 100%; */
   justify-content: space-between;
 }
 
@@ -388,7 +412,7 @@ ul > li > a {
 .lowerItemContent {
   margin-top: 24px;
   width: 85%;
-  height: 40%;
+  /* height: 40%; */
 }
 
 .lowerItemContent > h2 {
@@ -669,7 +693,7 @@ ul > li > a {
   flex-direction: column;
   justify-content: space-between;
   width: 33%;
-  height: 53%;
+  /* height: 53%; */
 }
 
 .fifthPageContent > h3 {
@@ -788,7 +812,7 @@ ul > li > a {
 
 .pageSeven {
   width: 100vw;
-  height: 130vh;
+  /* height: 130vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -799,35 +823,45 @@ ul > li > a {
 }
 
 .videoDiv {
-  height: 65%;
+  /* height: 65%; */
   width: 100%;
   margin-top: 70px;
   display: flex;
+}
+
+.group1 {
+  width: 530px;
+  height: 550px;
+}
+
+.group2 {
+  width: 330px;
+  height: 416px;
 }
 
 .video1 {
   position: relative;
   top: 60px;
   left: -10px;
-  width: 16%;
-  height: 30%;
+  width: 46%;
+  height: 32%;
   background: #d8d8d8;
   border-radius: 12px;
 }
 
 .video2 {
   position: relative;
-  top: 330px;
-  left: -70px;
-  width: 20%;
-  height: 34%;
+  top: 150px;
+  left: 90px;
+  width: 58%;
+  height: 42%;
   background: #d8d8d8;
   border-radius: 12px;
 }
 
 .video3 {
   width: 34%;
-  height: 48.5%;
+  height: 400px;
   background: transparent;
   border-radius: 12px;
 }
@@ -840,18 +874,18 @@ ul > li > a {
   position: relative;
   left: 30px;
   top: 140px;
-  width: 10%;
-  height: 19%;
+  width: 55%;
+  height: 144px;
   background: #d8d8d8;
   border-radius: 12px;
 }
 
 .video5 {
   position: relative;
-  top: 330px;
-  left: 70px;
-  width: 16%;
-  height: 30%;
+  top: 200px;
+  left: 240px;
+  width: 80%;
+  height: 208px;
   background: #d8d8d8;
   border-radius: 12px;
 }
@@ -982,8 +1016,6 @@ ul > li > a {
   line-height: 32px;
   color: #3a1700;
   width: 64%;
-  border-bottom: 1px solid #deddcd;
-  padding-bottom: 25px;
 }
 
 .pageNIC_lower {
@@ -1006,10 +1038,14 @@ ul > li > a {
   line-height: 32px;
   color: #3a1700;
 }
+.pageNICL_left > .line {
+  width: 250%;
+}
 
-.pageNICL_left > h4 > span {
-  border-top: 3px solid #333333;
-  padding-top: 30px;
+.pageNICL_left {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .pageNIC_lower > .explore {
@@ -1154,7 +1190,7 @@ ul > li > a {
 
 .pageElevenBox {
   width: 65%;
-  height: 60%;
+  /* height: 60%; */
   background: #ffffff;
   border-radius: 12px;
   margin-top: 70px;
@@ -1186,6 +1222,7 @@ ul > li > a {
   text-align: center;
   color: #3a1700;
   width: 90%;
+  height: 100%;
 }
 
 .pageEB_lower {
@@ -1222,13 +1259,26 @@ ul > li > a {
   border-radius: 50%;
 }
 
-.bigCircle {
+#bigCircle {
   width: 64px;
   height: 64px;
   border-radius: 50%;
-  background-color: #d8d8d8;
 }
 
+.bigCircle {
+  background: url(./images/griffin.webp) center;
+  background-size: cover;
+}
+
+.hannah {
+  background: url(./images/hannah.png) center;
+  background-size: cover;
+}
+
+.eren {
+  background: url(./images/eren.jpg) center;
+  background-size: cover;
+}
 .pageEB_lower > h3 {
   font-family: "Rowdies";
   font-style: normal;
@@ -1255,6 +1305,18 @@ ul > li > a {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+}
+.company1 {
+  display: flex;
+  width: 32%;
+  justify-content: space-between;
+}
+
+.company2 {
+  display: flex;
+  width: 32%;
+  justify-content: space-between;
 }
 
 .companies {
@@ -1317,13 +1379,13 @@ ul > li > a {
 
 .pageTwelveLowItem {
   width: 100%;
-  height: 160px;
+  /* height: 160px; */
   background: #f3f2e7;
   border-radius: 12px;
   margin-top: 32px;
   display: flex;
   align-items: center;
-  padding: 0 48px 0 48px;
+  padding: 40px 48px 40px 48px;
   justify-content: space-between;
 }
 
@@ -1555,4 +1617,24 @@ ul > li > a {
   line-height: 32px;
   text-align: right;
   color: #ffffff;
+}
+
+@media only screen and (max-width: 1022px) {
+  .nav_menu {
+    display: none;
+  }
+  .nav > .contact {
+    display: none;
+  }
+
+  .first_container {
+    flex-direction: column-reverse;
+    margin-top: 100px;
+    width: 100%;
+  }
+
+  .firstImage {
+    width: 50%;
+    height: 80%;
+  }
 }

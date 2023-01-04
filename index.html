@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Charity</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -35,6 +36,11 @@
           </ul>
         </div>
         <button class="contact">contact</button>
+        <button class="menu">
+          <div></div>
+          <div></div>
+          <div></div>
+        </button>
       </div>
       <div class="first_container">
         <div class="content">
@@ -42,7 +48,7 @@
           <p>It involves giving money, goods or time and effort to those who need it.</p>
           <button class="donation">make a donation</button>
         </div>
-        <img src="./images/firstImage.png" alt="image">
+        <img src="./images/firstImage.png" alt="image" class="firstImage">
         </div>
       </div>
     </section>
@@ -103,7 +109,7 @@
           </div>
         </div>
       </div>
-      <img src="./images/Group 2.png" alt="">
+      <img src="./images/Group 2.png" alt="" class="decoration">
     </section>
     <section class="pageThree" id="pageThree">
       <div class="thirdPageContainer" id="thirdPageContainer">
@@ -169,7 +175,7 @@
     </section>
     <section class="pageFour">
       <div class="fourthPageContainer" id="fourthPageContainer">
-          <img src="./images/pic.png" alt="pic">
+          <img src="./images/pic.png" alt="pic" class="firstImage">
           <div class="fourthPC_content">
             <p class="goldText">about us</p>
             <h1 class="h1Text">Highest form 
@@ -214,14 +220,17 @@
             <h3>Charity is the act of giving help to those in need of it. It is a humanitarian act. It involves giving money, goods or time and effort to those who need it.</h3>
             <button class="volunteer">be a volunteer</button>
         </div>
-        <img src="./images/pic2.png" alt="image">
+        <img src="./images/pic2.png" alt="image" class="firstImage">
 
       </div>
     </section>
     <section class="pageSix">
       <div class="pageSixContainer">
-        <p class="goldText">Our Services</p>
-        <h1 class="h1Text">Services We Provide</h1>
+        <div class="pageSixText">
+          <p class="goldText">Our Services</p>
+          <h1 class="h1Text">Services We Provide</h1>
+
+        </div>
         <div class="pageSC_items" id="services">
           <div>
             <div class="pageSFI_header">
@@ -258,15 +267,19 @@
       <p class="goldText">Our Gallery</p>
       <h1 class="h1Text">Watch Our Gallery</h1>
       <div class="videoDiv">
-        <div class="video1"></div>
-        <div class="video2"></div>
+        <div class="group1">
+          <div class="video1"></div>
+          <div class="video2"></div>
+        </div>
         <div class="video3">
           <video width="100%" height="100%" controls>
             <source src="./video/charity.mp4" type="video/mp4">
           </video>
         </div>
-        <div class="video4"></div>
-        <div class="video5"></div>
+        <div class="group2">
+          <div class="video4"></div>
+          <div class="video5"></div>
+        </div>
       </div>
       <button class="explore">explore us</button>
     </section>
@@ -295,6 +308,9 @@
               <h1>Bring together people who care about a cause</h1>
               <div class="pageNIC_lower">
                 <div class="pageNICL_left">
+                  <div class="line">
+                    <div class="smallLine"></div>
+                  </div>
                   <h4><span>16 Feb,</span> 2020</h4>
                 </div>
                 <button class="explore">explore</button>
@@ -309,6 +325,9 @@
               <h1>Together people who care about a cause</h1>
               <div class="pageNIC_lower">
                 <div class="pageNICL_left">
+                  <div class="line">
+                    <div class="smallLine"></div>
+                  </div>
                   <h4><span>20 Feb,</span> 2020</h4>
                 </div>
                 <button class="explore">explore</button>
@@ -323,6 +342,9 @@
               <h1>People who care about a cause</h1>
               <div class="pageNIC_lower">
                 <div class="pageNICL_left">
+                  <div class="line">
+                    <div class="smallLine"></div>
+                  </div>
                   <h4><span>24 Feb,</span> 2020</h4>
                 </div>
                 <button class="explore">explore</button>
@@ -392,35 +414,40 @@
         <div class="pageElevenBox">
           <img src="./images/Shape.svg" alt="Shape" class="shape">
           <div class="pageEB_text">
-            <h2>"Charity is the act of giving help to those in need of it. It is a humanitarian act. It involves giving money, goods or time and effort to those who need it. It is done without expecting something in return."</h2>
+            <h2 id="speech">"Charity is the act of giving help to those in need of it. It is a humanitarian act. It involves giving money, goods or time and effort to those who need it. It is done without expecting something in return."</h2>
+
           </div>
           <div class="pageEB_lower">
             <div class="line">
               <div class="smallLine"></div>
             </div>
             <div class="circles">
+              <div class="smallCircle one"></div>
+              <div class="smallCircle one"></div>
+              <div class="smallCircle one"></div>
               <div class="smallCircle"></div>
+              <div class="bigCircle" id="bigCircle"></div>
               <div class="smallCircle"></div>
-              <div class="smallCircle"></div>
-              <div class="smallCircle"></div>
-              <div class="bigCircle"></div>
-              <div class="smallCircle"></div>
-              <div class="smallCircle"></div>
-              <div class="smallCircle"></div>
-              <div class="smallCircle"></div>
+              <div class="smallCircle one"></div>
+              <div class="smallCircle one"></div>
+              <div class="smallCircle one"></div>
             </div>
-            <h3>Neville Griffin</h3>
+            <h3 id="username">Neville Griffin</h3>
           </div>
         </div>
         <div class="pageElevenButtons">
-          <button><i class="fa-solid fa-angle-left"></i></button>
-          <button><i class="fa-solid fa-angle-right"></i></button>
+          <button id="leftArrow"><i class="fa-solid fa-angle-left"></i></button>
+          <button id="rightArrow"><i class="fa-solid fa-angle-right"></i></button>
         </div>
         <div class="companies">
-          <img src="./images/digital.svg" alt="">
-          <img src="./images/vortex.svg" alt="">
-          <img src="./images/travel.svg" alt="">
-          <img src="./images/fuzion.svg" alt="">
+          <div class="company1">
+            <img src="./images/digital.svg" alt="">
+            <img src="./images/vortex.svg" alt="">
+          </div>
+          <div class="company2">
+            <img src="./images/travel.svg" alt="">
+            <img src="./images/fuzion.svg" alt="">
+          </div>
           <img src="./images/mediafury.svg" alt="">
         </div>
       </div>
@@ -489,7 +516,7 @@
             <p class="lowText">Charity is the act of giving help to those in need of it. It is a humanitarian act.</p>
             <button class="explore">make a donation</button>
         </div>
-        <img src="./images/lastpic.png" alt="picture">
+        <img src="./images/lastpic.png" alt="picture" class="firstImage">
       </div>
     </section>
     <section class="pageFourteen">
@@ -504,7 +531,7 @@
         <img src="./images/mail.svg" alt="mail" class="icon">
         <div class="pageF_content">
           <p>Mail</p>
-          <h4>giogvenetadze13@gmail.com</h4>
+          <h4>charity@info.com</h4>
         </div>
       </div>
       <div class="address">

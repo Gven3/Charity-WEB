@@ -1,0 +1,335 @@
+@media only screen and (max-width: 1022px) {
+  .pageOne {
+    background: url(./images/respbcg.png) center;
+    background-size: cover;
+  }
+  .nav_menu {
+    display: none;
+  }
+  .nav > .contact {
+    display: none;
+  }
+  .menu {
+    display: flex;
+  }
+
+  .first_container {
+    flex-direction: column-reverse;
+    margin-top: 100px;
+    align-items: center;
+  }
+
+  .firstImage {
+    width: 380px;
+  }
+  .content {
+    width: 330px;
+    gap: 10px;
+  }
+
+  .content > h1 {
+    width: 342px;
+  }
+
+  .second_contentText > h1 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .gridContainers {
+    grid-template-columns: 330px;
+  }
+  .decoration {
+    display: none;
+  }
+
+  .thirdPageItems {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+  .thirdPageItems > .firstItem,
+  .secondItem,
+  .thirdItem {
+    width: 320px;
+  }
+
+  .fourthPageContainer {
+    flex-direction: column;
+    align-items: center;
+    width: 342px;
+  }
+  .fourthPC_content {
+    width: 100%;
+  }
+  .fourthPMC > h2 {
+    width: 100%;
+  }
+
+  .fourthPMC_lower {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .fourthPMC_lower > div {
+    width: 330px;
+  }
+
+  .fifthPageContainer {
+    flex-direction: column;
+    gap: 22px;
+  }
+  .fifthPageContainer > .firstImage {
+    width: 330px;
+    height: 360px;
+  }
+  .fifthPageContent {
+    width: 330px;
+  }
+
+  .pageSixContainer {
+    width: 330px;
+  }
+
+  .pageSixText > h1 {
+    font-size: 40px;
+    width: 300px;
+    line-height: 48px;
+    letter-spacing: -1px;
+  }
+
+  .pageSC_items {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .pageSC_items > div {
+    width: 330px;
+  }
+  .pageSeven {
+    padding-bottom: 118px;
+  }
+
+  .pageSeven > .explore {
+    margin-top: 46px;
+  }
+
+  .videoDiv {
+    flex-direction: column;
+    align-items: center;
+  }
+  .group1 {
+    width: 250px;
+    height: 264px;
+  }
+  .group2 {
+    height: 230px;
+  }
+
+  .video1 {
+    width: 135px;
+    height: 104px;
+    top: 10px;
+  }
+  .video2 {
+    width: 175px;
+    height: 128px;
+    top: 32px;
+  }
+  .video3 {
+    width: 330px;
+    height: 230px;
+    top: 44px;
+  }
+  .video4 {
+    width: 92px;
+    height: 72px;
+    top: 36px;
+    left: 200px;
+  }
+  .video5 {
+    width: 135px;
+    height: 104px;
+    top: 54px;
+    left: 230px;
+  }
+
+  .pageEight {
+    background: url(./images/respbcg2.png);
+    background-size: cover;
+  }
+  .pageEightContainer {
+    width: 330px;
+    height: 216px;
+    flex-direction: column;
+    align-items: center;
+    gap: 34px;
+  }
+  .pageEC_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 18px;
+  }
+  .pageEC_buttons {
+    gap: 10px;
+  }
+  .pageEC_text > h1 {
+    font-size: 40px;
+  }
+  .pageEC_text > p,
+  .pageEC_text > h1 {
+    text-align: center;
+    width: 100%;
+  }
+  .pageNineItems {
+    align-items: center;
+  }
+
+  .pageNineItems > div {
+    flex-direction: column;
+    width: 330px;
+    height: 416px;
+    justify-content: flex-start;
+  }
+  .pageNineItems > div > .pageNineItems_main {
+    width: 100%;
+    border-radius: 12px 12px 0 0;
+  }
+
+  .pageNI_content > h1 {
+    width: 100%;
+  }
+  .pageNI_content {
+    width: 85%;
+    margin-top: 22px;
+  }
+
+  #events {
+    font-size: 40px;
+  }
+
+  .pageNIC_lower > .explore {
+    margin-top: 24px;
+  }
+
+  .pageTC_header {
+    align-items: center;
+  }
+
+  .pageTenItems {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+  .pageTenItems > div {
+    width: 330px;
+  }
+
+  .circles {
+    justify-content: center;
+    gap: 36px;
+  }
+  .one {
+    display: none;
+  }
+  .companies {
+    width: 300px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+  }
+  .company1 {
+    width: 100%;
+  }
+  .company2 {
+    width: 100%;
+  }
+
+  .pageElevenBox {
+    width: 330px;
+  }
+
+  .pageTwelve {
+    align-items: center;
+  }
+
+  .pageTwelveContainer {
+    align-items: center;
+  }
+
+  .pageTwelveContainer > h1,
+  .pageTwelveContainer > p {
+    width: 330px;
+  }
+
+  .pageTwelveItems {
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+  }
+
+  .pageTwelveItems > div {
+    width: 330px;
+  }
+  .pageTwelveLowItem {
+    flex-direction: column;
+    width: 330px;
+  }
+  .pageT_buttons {
+    flex-direction: column;
+    margin-top: 32px;
+  }
+  .pageTLI_text {
+    width: 274px;
+  }
+  .pageT_buttons > button,
+  .pageT_buttons > input {
+    width: 274px;
+  }
+
+  .pageThirteen {
+    background: url(./images/respbcg3.png);
+    background-size: cover;
+  }
+  .pageThirteenContainer {
+    flex-direction: column-reverse;
+  }
+  .pageThirteenContainer > .firstImage {
+    width: 340px;
+    height: 350px;
+  }
+  .pageTC_text {
+    width: 330px;
+  }
+  .pageFourteen {
+    flex-direction: column;
+    align-items: center;
+  }
+  .pageFourteen > div {
+    width: 375px;
+  }
+
+  .pageFC_content {
+    flex-direction: column;
+    align-items: center;
+    width: 330px;
+    text-align: center;
+    gap: 48px;
+  }
+
+  .pageFifteenLower {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .video5 {
+    left: 220px;
+  }
+}
