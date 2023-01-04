@@ -309,7 +309,7 @@
     align-items: center;
   }
   .pageFourteen > div {
-    width: 375px;
+    width: 100vw;
   }
 
   .pageFC_content {
