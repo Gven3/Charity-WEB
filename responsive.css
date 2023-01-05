@@ -1,6 +1,6 @@
 @media only screen and (max-width: 1281px) {
   body {
-    overflow: hidden;
+    overflow-x: hidden;
   }
   .pageOne {
     background: url(./images/respbcg.png) center;
