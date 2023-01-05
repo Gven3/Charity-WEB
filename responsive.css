@@ -1,16 +1,78 @@
-@media only screen and (max-width: 1022px) {
+@media only screen and (max-width: 1281px) {
+  body {
+    overflow: hidden;
+  }
   .pageOne {
     background: url(./images/respbcg.png) center;
     background-size: cover;
+    overflow-x: hidden;
   }
   .nav_menu {
-    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 0;
+    background-color: #f3f2e7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
   }
+
+  .nav_menu.active {
+    height: 500px;
+  }
+  .nav_menu.active ul {
+    opacity: 1;
+  }
+
+  .nav_menu > ul {
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+    gap: 30px;
+    font-size: 30px;
+    opacity: 0;
+    transition: all 0.3s;
+  }
+
+  .nav_menu a {
+    color: #d58e5e;
+  }
+
   .nav > .contact {
     display: none;
   }
   .menu {
     display: flex;
+    z-index: 1;
+  }
+
+  .logo {
+    z-index: 1;
+  }
+
+  .slide1 {
+    transition: all 0.5s;
+  }
+  .slide2 {
+    transition: all 0.5s;
+  }
+  .slide3 {
+    transition: all 0.5s;
+  }
+
+  .slide1.active {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .slide2.active {
+    opacity: 0;
+  }
+
+  .slide3.active {
+    transform: translateY(-8px) rotate(-45deg);
   }
 
   .first_container {
@@ -31,9 +93,15 @@
     width: 342px;
   }
 
+  .second_contentText {
+    align-items: center;
+  }
+
   .second_contentText > h1 {
     font-size: 24px;
     line-height: 32px;
+    letter-spacing: 0;
+    width: 330px;
   }
 
   .gridContainers {
@@ -51,7 +119,7 @@
   .thirdPageItems > .firstItem,
   .secondItem,
   .thirdItem {
-    width: 320px;
+    width: 330px;
   }
 
   .fourthPageContainer {
@@ -119,6 +187,8 @@
     align-items: center;
   }
   .group1 {
+    position: relative;
+    left: -140px;
     width: 250px;
     height: 264px;
   }
@@ -151,7 +221,7 @@
     width: 135px;
     height: 104px;
     top: 54px;
-    left: 230px;
+    left: 280px;
   }
 
   .pageEight {
@@ -325,11 +395,5 @@
     align-items: center;
     text-align: center;
     gap: 16px;
-  }
-}
-
-@media only screen and (max-width: 376px) {
-  .video5 {
-    left: 220px;
   }
 }

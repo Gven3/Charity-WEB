@@ -3,6 +3,12 @@ const rightArrow = document.querySelector("#rightArrow");
 const speech = document.querySelector("#speech");
 const username = document.querySelector("#username");
 const bigCircle = document.querySelector("#bigCircle");
+const burger = document.querySelector(".menu");
+const navMenu = document.querySelector(".nav_menu");
+const navMenuUl = document.querySelector(".ul");
+const slide1 = document.querySelector(".slide1");
+const slide2 = document.querySelector(".slide2");
+const slide3 = document.querySelector(".slide3");
 
 rightArrow.addEventListener("click", (event) => {
   event.preventDefault();
@@ -24,4 +30,18 @@ leftArrow.addEventListener("click", (e) => {
     bigCircle.classList.remove("hannah");
     bigCircle.classList.toggle("bigCircle");
   }
+});
+
+burger.addEventListener("click", (e) => {
+  e.preventDefault;
+  navMenu.classList.toggle("active");
+  navMenuUl.classList.toggle("active");
+  slide1.classList.toggle("active");
+  slide2.classList.toggle("active");
+  slide3.classList.toggle("active");
+});
+navMenuUl.addEventListener("click", (e) => {
+  e.preventDefault;
+  navMenu.classList.toggle("active");
+  navMenuUl.classList.toggle("active");
 });
