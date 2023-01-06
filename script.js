@@ -44,4 +44,7 @@ navMenuUl.addEventListener("click", (e) => {
   e.preventDefault;
   navMenu.classList.toggle("active");
   navMenuUl.classList.toggle("active");
+  slide1.classList.toggle("active");
+  slide2.classList.toggle("active");
+  slide3.classList.toggle("active");
 });
