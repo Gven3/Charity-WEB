@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: url(./images/Mask.png) center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  width: 85%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+form {
+  position: relative;
+  width: 500px;
+  height: 100%;
+  background: #1f2327;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 40px;
+  animation: formAnimation 2s;
+}
+
+@keyframes formAnimation {
+  0% {
+    left: 600px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+.formUpper {
+  width: 80%;
+  margin-top: 40px;
+}
+
+.formUpper > h1 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 68px;
+  color: #ffffff;
+}
+
+.formUpper > p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #748aa1;
+}
+
+.formMiddle {
+  width: 80%;
+  margin-top: 16px;
+  background: #292e33;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 30px;
+}
+
+.inputControl {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  padding-left: 10px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+  color: #748aa1;
+}
+
+input {
+  background: #292e33;
+  border: 1px solid #33393f;
+  border-radius: 5px;
+  height: 42px;
+  margin-top: 6px;
+  color: white;
+  padding-left: 8px;
+}
+
+input:focus {
+  outline: none;
+}
+
+i {
+  position: relative;
+  left: 316px;
+  top: -29px;
+  color: greenyellow;
+}
+
+.inputDiv > input {
+  width: 340px;
+}
+
+[for="country"] {
+  margin-top: 26px;
+}
+
+[name="country"] {
+  background: #292e33;
+  border: 1px solid #33393f;
+  border-radius: 5px;
+  height: 42px;
+  color: white;
+  padding: 10px;
+}
+
+.formMiddle_low {
+  width: 100%;
+  height: 88px;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  margin-top: 32px;
+}
+
+.formML_one {
+  width: 44%;
+}
+
+.formML_one > input {
+  width: 100%;
+}
+
+.formML_two {
+  width: 44%;
+}
+
+.formML_two > input {
+  width: 100%;
+}
+
+.signup {
+  margin-top: 50px;
+  height: 40px;
+  border: none;
+  background: #29cb97;
+  border-radius: 5px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #ffffff;
+}
+
+.blue {
+  background: #255b9b;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  font-family: "Roboto";
+  color: #ffffff;
+  height: 40px;
+  border: none;
+  width: 48%;
+}
+.cyan {
+  background: #00adee;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  font-family: "Roboto";
+  color: #ffffff;
+  height: 40px;
+  border: none;
+  width: 48%;
+}
+
+.buttons {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+
+.error {
+  font-size: 14px;
+  color: red;
+  font-family: "Roboto";
+}
+
+.inputControl.error input {
+  border-color: red;
+}
+
+.inputControl.error select {
+  border-color: red;
+}
+
+.inputControl.success input {
+  border-color: greenyellow;
+}
+
+.inputControl.success select {
+  border-color: greenyellow;
+}
+
+@media only screen and (max-width: 1000px) {
+  main {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background: none;
+  }
+  main {
+    width: 100%;
+  }
+  form {
+    width: 100%;
+    height: 100vh;
+    animation: none;
+  }
+}

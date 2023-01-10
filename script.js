@@ -9,6 +9,7 @@ const navMenuUl = document.querySelector(".ul");
 const slide1 = document.querySelector(".slide1");
 const slide2 = document.querySelector(".slide2");
 const slide3 = document.querySelector(".slide3");
+const signUp = document.querySelector(".jsbutton");
 
 rightArrow.addEventListener("click", (event) => {
   event.preventDefault();
@@ -47,4 +48,8 @@ navMenuUl.addEventListener("click", (e) => {
   slide1.classList.toggle("active");
   slide2.classList.toggle("active");
   slide3.classList.toggle("active");
+});
+
+signUp.addEventListener("click", () => {
+  location.href = "signup.html";
 });
