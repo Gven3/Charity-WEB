@@ -31,7 +31,7 @@ form {
   flex-direction: column;
   align-items: center;
   padding-bottom: 40px;
-  animation: formAnimation 2s;
+  animation: formAnimation 1.5s;
 }
 
 @keyframes formAnimation {
@@ -100,6 +100,7 @@ input {
   margin-top: 6px;
   color: white;
   padding-left: 8px;
+  margin-bottom: 6px;
 }
 
 input:focus {
@@ -128,6 +129,8 @@ i {
   height: 42px;
   color: white;
   padding: 10px;
+  margin-top: 6px;
+  margin-bottom: 6px;
 }
 
 .formMiddle_low {

@@ -29,7 +29,8 @@ form.addEventListener("submit", (e) => {
     !city.classList.contains("pseudo") &&
     !zipCode.classList.contains("pseudo")
   ) {
-    location.href = "index.html";
+    location.href =
+      "2wCEAAoHCBUWFRgSEhUYGBgZGBgYGBwcGBocHBgcHBoZGRkcGBocIS4lHh4rHxgcJjgmKzAxNTU1GiQ7QDszPy40NTEBDAwMEA8QHhISHjQlJCs0NDQ0NDE0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQxNDE0NDQ0NP";
   }
 });
 
@@ -74,26 +75,26 @@ const validateInputs = () => {
     setError(email, "Can't be blank");
   } else if (!isValidEmail(emailValue)) {
     setError(email, "invalid email (domain should be '.ge')");
-  } else if (isValidEmail(emailValue)) {
+  } else {
     setSuccess(email);
   }
   if (select.value === "") {
     setError(country, "Required");
-  } else if (select.value !== "") {
+  } else {
     setSuccess(country);
   }
   if (cityValue === "" || cityValue === null) {
     setError(city, "Required");
   } else if (!cityRegex.test(cityValue)) {
     setError(city, "invalid country");
-  } else if (cityRegex.test(cityValue)) {
+  } else {
     setSuccess(city);
   }
   if (zipValue === "" || zipValue === null) {
     setError(zip, "Required");
   } else if (!isValidZip(zipValue)) {
     setError(zip, "only numbers");
-  } else if (isValidZip(zipValue)) {
+  } else {
     setSuccess(zipCode);
   }
 };

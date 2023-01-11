@@ -18,6 +18,17 @@
     align-items: center;
     justify-content: center;
     transition: all 0.5s;
+    flex-direction: column;
+  }
+  .nav_menu > .contact {
+    position: relative;
+    top: 30px;
+    margin: 0;
+    opacity: 0;
+    transition: all 0.2s;
+  }
+  .nav_menu > .contact.active {
+    opacity: 1;
   }
 
   .nav_menu.active {
@@ -41,9 +52,6 @@
     color: #d58e5e;
   }
 
-  .nav > .contact {
-    display: none;
-  }
   .menu {
     display: flex;
     z-index: 1;
@@ -380,6 +388,10 @@
   }
   .pageFourteen > div {
     width: 100vw;
+  }
+
+  .pageFifteenContainer {
+    justify-content: center;
   }
 
   .pageFC_content {

@@ -40,6 +40,7 @@ burger.addEventListener("click", (e) => {
   slide1.classList.toggle("active");
   slide2.classList.toggle("active");
   slide3.classList.toggle("active");
+  signUp.classList.toggle("active");
 });
 navMenuUl.addEventListener("click", (e) => {
   e.preventDefault;
@@ -48,6 +49,7 @@ navMenuUl.addEventListener("click", (e) => {
   slide1.classList.toggle("active");
   slide2.classList.toggle("active");
   slide3.classList.toggle("active");
+  signUp.classList.toggle("active");
 });
 
 signUp.addEventListener("click", () => {
