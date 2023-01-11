@@ -5,15 +5,13 @@ const city = document.querySelector("#city");
 const zipCode = document.querySelector("#zip");
 const select = document.querySelector("#country");
 const signUp = document.querySelector(".signup");
-const inputControl = document.querySelector(".inputControl");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-
   email.addEventListener("keyup", (e) => {
     validateInputs();
   });
-  select.addEventListener("onkeyup", (e) => {
+  select.addEventListener("keyup", (e) => {
     validateInputs();
   });
   city.addEventListener("keyup", (e) => {
@@ -29,8 +27,7 @@ form.addEventListener("submit", (e) => {
     !city.classList.contains("pseudo") &&
     !zipCode.classList.contains("pseudo")
   ) {
-    location.href =
-      "2wCEAAoHCBUWFRgSEhUYGBgZGBgYGBwcGBocHBgcHBoZGRkcGBocIS4lHh4rHxgcJjgmKzAxNTU1GiQ7QDszPy40NTEBDAwMEA8QHhISHjQlJCs0NDQ0NDE0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQxNDE0NDQ0NP";
+    location.href = "weather.html";
   }
 });
 

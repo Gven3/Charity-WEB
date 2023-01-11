@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./wearher.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./images/cloudy.svg" alt="cloudy" />
+        <h2>Weather by VicBox</h2>
+      </div>
+      <div class="menu">
+        <h2><a href="#">GitHub</a></h2>
+        <h2><a href="#">About</a></h2>
+      </div>
+    </header>
+    <div class="items">
+      <div class="item">
+        <div class="itemUpper">
+          <img src="./images/sun.svg" alt="sun" class="sun" />
+          <div class="itemUpper_text">
+            <h2 id="dataCity"></h2>
+            <p id="dataDate">Monday 01/17/2022</p>
+          </div>
+        </div>
+        <h1 id="dataTemp"></h1>
+        <div class="itemLower">
+          <div class="detail">
+            <div class="detailWrapper">
+              <div class="detailTitle">
+                <img src="./images/visibility.svg" alt="vision" />
+                <p>Visibility</p>
+              </div>
+              <p id="dataVisibility">10</p>
+            </div>
+            <div class="line"></div>
+            <div class="detailWrapper">
+              <div class="detailTitle">
+                <img src="./images/temperature.svg" alt="temp" />
+                <p>Feels like</p>
+              </div>
+              <p id="dataFeelsLike">10</p>
+            </div>
+          </div>
+          <div class="detail">
+            <div class="detailWrapper">
+              <div class="detailTitle">
+                <img src="./images/Vector.svg" alt="humidity" />
+                <p>Humidity</p>
+              </div>
+              <p id="dataHumidity">10</p>
+            </div>
+            <div class="line"></div>
+            <div class="detailWrapper different">
+              <div class="detailTitle">
+                <img src="./images/wind.svg" alt="wind" />
+                <p>Wind</p>
+              </div>
+              <p id="dataWind">10</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <button class="addButt"><i class="fa-solid fa-plus"></i></button>
+        <h2>Add new location</h2>
+      </div>
+    </div>
+
+    <script src="weather.js"></script>
+  </body>
+</html>

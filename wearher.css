@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: url(./images/weatherbcg.png) center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 80px;
+  background: rgba(255, 255, 255, 0.19);
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+a,
+h2 {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.items {
+  width: 60vw;
+  margin-top: 116px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.item {
+  width: 416px;
+  height: 460px;
+  background-color: rgb(0, 0, 0, 0.2);
+  backdrop-filter: blur(16px);
+  border-radius: 48px;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.itemUpper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+}
+
+p {
+  font-family: "Poppins";
+  font-style: normal;
+  color: #ffffff;
+}
+
+h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 144px;
+  color: #ffffff;
+  display: flex;
+}
+
+h1::after {
+  content: "°C";
+  font-size: 24px;
+  position: relative;
+  top: 44px;
+}
+
+.itemLower {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  gap: 26px;
+}
+
+.detail {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.detailWrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 130px;
+}
+
+.detailTitle {
+  display: flex;
+  gap: 6px;
+}
+
+.line {
+  height: 19px;
+  width: 1px;
+  background-color: white;
+}
+
+.addButt {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.26);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+i {
+  color: white;
+  font-size: 40px;
+}
+
+/* @media only screen and (max-width: 1281px); */

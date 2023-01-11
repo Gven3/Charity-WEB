@@ -138,7 +138,6 @@ i {
   height: 88px;
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
   margin-top: 32px;
 }
 
@@ -165,10 +164,6 @@ i {
   background: #29cb97;
   border-radius: 5px;
   font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 23px;
   color: #ffffff;
 }
 
