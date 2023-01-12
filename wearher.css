@@ -44,7 +44,8 @@ header {
 }
 
 a,
-h2 {
+h2,
+label {
   text-decoration: none;
   color: white;
   font-weight: 400;
@@ -133,7 +134,7 @@ h2 {
 
 .sun {
   position: relative;
-  left: -30px;
+  left: -20px;
   animation: sun 1s infinite alternate-reverse;
 }
 
