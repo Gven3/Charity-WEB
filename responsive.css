@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1281px) {
+@media only screen and (max-width: 1181px) {
   body {
     overflow-x: hidden;
   }
@@ -9,10 +9,10 @@
   }
   .nav_menu {
     position: absolute;
-    top: 0;
+    top: -500px;
+    height: 500px;
     left: 0;
     width: 100vw;
-    height: 0;
     background-color: #f3f2e7;
     display: flex;
     align-items: center;
@@ -27,7 +27,7 @@
     top: 30px;
     margin: 0;
     opacity: 0;
-    transition: all 0.2s;
+    transition: 0.2s;
   }
   .nav_menu > .contact.active {
     opacity: 1;
@@ -35,8 +35,8 @@
   }
 
   .nav_menu.active {
-    height: 500px;
     visibility: visible;
+    top: 0;
   }
 
   .nav_menu > ul {
