@@ -26,11 +26,11 @@
     <header>
       <div class="logo">
         <img src="./images/cloudy.svg" alt="cloudy" />
-        <h2>Weather by VicBox</h2>
+        <h2 class="logoDN">Weather by VicBox</h2>
       </div>
       <div class="menu">
-        <h2><a href="#">GitHub</a></h2>
-        <h2><a href="#">About</a></h2>
+        <h2><a href="https://github.com/Gven3">GitHub</a></h2>
+        <h2><a href="https://github.com/Gven3">About</a></h2>
       </div>
     </header>
     <div class="items">
@@ -81,8 +81,14 @@
         </div>
       </div>
       <div class="item">
-        <button class="addButt"><i class="fa-solid fa-plus"></i></button>
-        <h2>Add new location</h2>
+        <button class="addButt" id="addButt"><i class="fa-solid fa-plus"></i></button>
+        <h2 id="dnText">Add new location</h2>
+        <form class="addDiv">
+          <input type="text" id="input" />
+          <button id="iconDiv" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
       </div>
     </div>
 

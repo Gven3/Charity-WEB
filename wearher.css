@@ -20,9 +20,9 @@ header {
   align-items: center;
   justify-content: space-between;
   height: 80px;
+  width: 100%;
   padding: 0 80px;
   background: rgba(255, 255, 255, 0.19);
-  width: 100%;
 }
 
 .logo {
@@ -137,11 +137,126 @@ h1::after {
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
+  cursor: pointer;
 }
 
-i {
+.fa-plus {
   color: white;
   font-size: 40px;
 }
+.addDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+}
 
-/* @media only screen and (max-width: 1281px); */
+#input {
+  width: 0%;
+  opacity: 0;
+  height: 50px;
+  border: none;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.26);
+  padding-left: 12px;
+  color: white;
+  position: relative;
+  top: 20px;
+  transition: all 0.5s;
+}
+
+#input.active {
+  width: 100%;
+  opacity: 1;
+}
+
+.fa-magnifying-glass {
+  font: 24px;
+  color: white;
+}
+
+#iconDiv {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: -19px;
+  left: 120px;
+  background-color: rgba(255, 255, 255, 0.26);
+  border-radius: 50%;
+  border: none;
+  opacity: 0;
+}
+
+#iconDiv.active {
+  transition: all 0.5s;
+  transition-delay: 0.3s;
+  opacity: 1;
+}
+
+#input:focus {
+  outline: none;
+}
+
+@media only screen and (max-width: 1406px) {
+  .item {
+    width: 380px;
+    height: 430px;
+  }
+  #iconDiv {
+    left: 110px;
+  }
+}
+@media only screen and (max-width: 1282px) {
+  .item {
+    width: 360px;
+    height: 430px;
+  }
+  #iconDiv {
+    left: 100px;
+  }
+}
+
+@media only screen and (max-width: 1222px) {
+  body {
+    height: auto;
+    padding-bottom: 100px;
+  }
+
+  .items {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .item {
+    width: 380px;
+    height: 430px;
+  }
+  #iconDiv {
+    left: 110px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .logoDN {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .item {
+    width: 360px;
+  }
+  header {
+    padding: 0 40px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .item {
+    width: 340px;
+  }
+}
