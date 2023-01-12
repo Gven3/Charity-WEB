@@ -7,6 +7,7 @@ const dataVisibility = document.querySelector("#dataVisibility");
 const dataFeelsLike = document.querySelector("#dataFeelsLike");
 const dataHumidity = document.querySelector("#dataHumidity");
 const dataWind = document.querySelector("#dataWind");
+const desc = document.querySelector("#desc");
 
 const link =
   "https://api.openweathermap.org/data/2.5/weather?q=washington&units=metric&appid=d6e73b4282d3d3a1afc8a0b11b906f28";
@@ -20,6 +21,7 @@ fetch(link)
     dataFeelsLike.innerText = data.main.feels_like;
     dataHumidity.innerText = data.main.humidity;
     dataWind.innerText = data.wind.speed;
+    desc.innerText = data.weather[0].description;
   });
 
 // Add Country JS
@@ -28,11 +30,14 @@ const addButton = document.getElementById("addButt");
 const input = document.getElementById("input");
 const icon = document.querySelector("#iconDiv");
 const form = document.querySelector(".addDiv");
+const addBoxUpper = document.querySelector(".addBoxUpper");
+const weatherImg = document.querySelector("#weatherImg");
 
 addButton.addEventListener("click", (e) => {
   e.preventDefault();
   input.classList.toggle("active");
   icon.classList.toggle("active");
+  addBoxUpper.classList.toggle("active");
 });
 
 form.addEventListener("submit", (e) => {
@@ -51,5 +56,7 @@ form.addEventListener("submit", (e) => {
       dataFeelsLike.innerText = data.main.feels_like;
       dataHumidity.innerText = data.main.humidity;
       dataWind.innerText = data.wind.speed;
+      // const iconCode = data.weather[0].icon;
+      desc.innerText = data.weather[0].description;
     });
 });

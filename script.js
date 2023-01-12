@@ -10,6 +10,8 @@ const slide1 = document.querySelector(".slide1");
 const slide2 = document.querySelector(".slide2");
 const slide3 = document.querySelector(".slide3");
 const signUp = document.querySelector(".jsbutton");
+const signupBtn = document.querySelector(".signupBtn");
+const weatherBtn = document.querySelector(".weatherBtn");
 
 rightArrow.addEventListener("click", (event) => {
   event.preventDefault();
@@ -54,4 +56,10 @@ navMenuUl.addEventListener("click", (e) => {
 
 signUp.addEventListener("click", () => {
   location.href = "signup.html";
+});
+signUp.addEventListener("click", () => {
+  location.href = "signup.html";
+});
+weatherBtn.addEventListener("click", () => {
+  location.href = "weather.html";
 });

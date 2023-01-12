@@ -13,16 +13,22 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 }
 
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
+  top: -80px;
   height: 80px;
   width: 100%;
   padding: 0 80px;
   background: rgba(255, 255, 255, 0.19);
+  z-index: 1;
+  animation: headerAnim 0.5s ease-in-out forwards;
+  animation-delay: 0.6s;
 }
 
 .logo {
@@ -48,7 +54,7 @@ h2 {
 
 .items {
   width: 60vw;
-  margin-top: 116px;
+  margin-top: 100px;
   display: flex;
   justify-content: space-between;
 }
@@ -64,6 +70,58 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
+}
+
+.one {
+  animation: itemOneAnim 1s ease-in-out;
+}
+.two {
+  animation: itemTwoAnim 1s ease-in-out;
+}
+
+@keyframes itemOneAnim {
+  from {
+    top: 600px;
+  }
+  to {
+    top: 0;
+  }
+}
+@keyframes itemTwoAnim {
+  from {
+    top: -600px;
+  }
+  to {
+    top: 0;
+  }
+}
+@keyframes headerAnim {
+  from {
+    top: -80px;
+  }
+  to {
+    top: 0;
+  }
+}
+
+@keyframes sun {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .itemUpper {
@@ -71,6 +129,12 @@ h2 {
   align-items: center;
   justify-content: space-around;
   width: 80%;
+}
+
+.sun {
+  position: relative;
+  left: -30px;
+  animation: sun 1s infinite alternate-reverse;
 }
 
 p {
@@ -83,7 +147,7 @@ h1 {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 300;
-  font-size: 144px;
+  font-size: 130px;
   color: #ffffff;
   display: flex;
 }
@@ -95,11 +159,16 @@ h1::after {
   top: 44px;
 }
 
+#desc {
+  position: relative;
+  top: -24px;
+}
+
 .itemLower {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 80%;
+  width: 85%;
   gap: 26px;
 }
 
@@ -113,7 +182,7 @@ h1::after {
 .detailWrapper {
   display: flex;
   justify-content: space-between;
-  width: 130px;
+  width: 140px;
 }
 
 .detailTitle {
@@ -140,6 +209,32 @@ h1::after {
   cursor: pointer;
 }
 
+.madeWith {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  margin-top: 70px;
+  opacity: 0;
+  animation: opacity 1s ease-in-out 1s forwards;
+}
+.addBoxUpper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 40px;
+  transition: 0.5s all;
+}
+
+.addBoxUpper.active {
+  top: 0;
+}
+
 .fa-plus {
   color: white;
   font-size: 40px;
@@ -152,6 +247,7 @@ h1::after {
 }
 
 #input {
+  visibility: hidden;
   width: 0%;
   opacity: 0;
   height: 50px;
@@ -168,6 +264,7 @@ h1::after {
 #input.active {
   width: 100%;
   opacity: 1;
+  visibility: visible;
 }
 
 .fa-magnifying-glass {
@@ -201,12 +298,25 @@ h1::after {
 }
 
 @media only screen and (max-width: 1406px) {
+  body {
+    overflow: auto;
+  }
   .item {
     width: 380px;
     height: 430px;
   }
   #iconDiv {
     left: 110px;
+  }
+  #dataTemp {
+    font-size: 120px;
+    letter-spacing: -2px;
+  }
+  .one {
+    animation: none;
+  }
+  .two {
+    animation: none;
   }
 }
 @media only screen and (max-width: 1282px) {
@@ -258,5 +368,14 @@ h1::after {
 @media only screen and (max-width: 400px) {
   .item {
     width: 340px;
+  }
+
+  #dataTemp {
+    font-size: 120px;
+    letter-spacing: -2px;
+  }
+
+  #iconDiv {
+    left: 94px;
   }
 }

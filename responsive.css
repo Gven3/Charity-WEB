@@ -19,8 +19,10 @@
     justify-content: center;
     transition: all 0.5s;
     flex-direction: column;
+    visibility: hidden;
   }
   .nav_menu > .contact {
+    visibility: hidden;
     position: relative;
     top: 30px;
     margin: 0;
@@ -29,13 +31,12 @@
   }
   .nav_menu > .contact.active {
     opacity: 1;
+    visibility: visible;
   }
 
   .nav_menu.active {
     height: 500px;
-  }
-  .nav_menu.active ul {
-    opacity: 1;
+    visibility: visible;
   }
 
   .nav_menu > ul {
@@ -46,6 +47,11 @@
     font-size: 30px;
     opacity: 0;
     transition: all 0.3s;
+    visibility: hidden;
+  }
+  .nav_menu.active ul {
+    opacity: 1;
+    visibility: visible;
   }
 
   .nav_menu a {
