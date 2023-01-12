@@ -60,3 +60,19 @@ form.addEventListener("submit", (e) => {
       desc.innerText = data.weather[0].description;
     });
 });
+
+// dataDate
+
+const today = new Date();
+
+const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+const dayOfWeek = daysOfWeek[today.getDay()];
+
+const month = (today.getMonth() + 1).toString().padStart(2, "0");
+
+const day = today.getDate().toString().padStart(2, "0");
+
+const year = today.getFullYear();
+
+dataDate.innerText = `${dayOfWeek} ${month}/${day}/${year}`;
