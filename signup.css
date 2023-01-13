@@ -12,6 +12,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 main {
@@ -23,7 +24,6 @@ main {
 form {
   position: relative;
   width: 500px;
-  height: 100%;
   background: #1f2327;
   box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
@@ -32,6 +32,7 @@ form {
   align-items: center;
   padding-bottom: 40px;
   animation: formAnimation 1.5s;
+  transition: 0.5s;
 }
 
 @keyframes formAnimation {
@@ -46,18 +47,22 @@ form {
 .formUpper {
   width: 80%;
   margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.formUpper > h1 {
+.formUpperText > h1 {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 48px;
   line-height: 68px;
   color: #ffffff;
+  transition: 1s;
 }
 
-.formUpper > p {
+.formUpperText > p {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -75,6 +80,7 @@ form {
   display: flex;
   flex-direction: column;
   padding: 30px 30px;
+  transition: 0.5s;
 }
 
 .inputControl {
@@ -90,6 +96,7 @@ label {
   font-size: 12px;
   line-height: 17px;
   color: #748aa1;
+  transition: 0.5s;
 }
 
 input {
@@ -101,6 +108,7 @@ input {
   color: white;
   padding-left: 8px;
   margin-bottom: 6px;
+  transition: 0.5s;
 }
 
 input:focus {
@@ -108,10 +116,9 @@ input:focus {
 }
 
 i {
-  position: relative;
-  left: 316px;
-  top: -29px;
-  color: greenyellow;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
 }
 
 .inputDiv > input {
@@ -131,6 +138,7 @@ i {
   padding: 10px;
   margin-top: 6px;
   margin-bottom: 6px;
+  transition: 0.5s;
 }
 
 .formMiddle_low {
@@ -235,5 +243,8 @@ i {
     height: 100vh;
     animation: none;
     border-radius: 0;
+  }
+  .formUpper {
+    margin-top: 20px;
   }
 }

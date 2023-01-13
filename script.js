@@ -70,7 +70,7 @@ navMenuUl.addEventListener("click", (e) => {
 signUp.addEventListener("click", () => {
   location.href = "signup.html";
 });
-signUp.addEventListener("click", () => {
+signupBtn.addEventListener("click", () => {
   location.href = "signup.html";
 });
 weatherBtn.addEventListener("click", () => {

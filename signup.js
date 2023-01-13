@@ -5,6 +5,10 @@ const city = document.querySelector("#city");
 const zipCode = document.querySelector("#zip");
 const select = document.querySelector("#country");
 const signUp = document.querySelector(".signup");
+const toggle = document.querySelector("#toggleLight");
+const signUpText = document.querySelector("#signUpText");
+const formMiddle = document.querySelector(".formMiddle");
+const input = document.getElementsByTagName("input");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -95,3 +99,40 @@ const validateInputs = () => {
     setSuccess(zipCode);
   }
 };
+
+// dark mode
+
+toggle.addEventListener("click", (e) => {
+  e.preventDefault();
+  if (toggle.classList.contains("fa-moon")) {
+    toggle.classList.remove("fa-moon");
+    toggle.classList.toggle("fa-sun");
+    toggle.style.color = "black";
+    form.style.background = " white";
+    signUpText.style.color = "black";
+    formMiddle.style.background = "white";
+    email.style.background = "white";
+    zipCode.style.background = "white";
+    city.style.background = "white";
+    select.style.background = "white";
+    select.style.color = "#292E33";
+    email.style.color = "#292E33";
+    zipCode.style.color = "#292E33";
+    city.style.color = "#292E33";
+  } else if (toggle.classList.contains("fa-sun")) {
+    toggle.classList.remove("fa-sun");
+    toggle.classList.toggle("fa-moon");
+    toggle.style.color = "white";
+    form.style.background = " #1f2327";
+    signUpText.style.color = "white";
+    formMiddle.style.background = "#292e33";
+    email.style.background = "#292E33";
+    zipCode.style.background = "#292E33";
+    city.style.background = "#292E33";
+    select.style.background = "#292E33";
+    select.style.color = "white";
+    email.style.color = "white";
+    zipCode.style.color = "#white";
+    city.style.color = "white";
+  }
+});
