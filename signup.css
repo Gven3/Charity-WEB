@@ -226,6 +226,9 @@ i {
 }
 
 @media only screen and (max-width: 1000px) {
+  body {
+    overflow-y: visible;
+  }
   main {
     justify-content: center;
   }

@@ -1,6 +1,5 @@
 const form = document.querySelector("#form");
 const email = document.querySelector("#email");
-const country = document.querySelector("#country");
 const city = document.querySelector("#city");
 const zipCode = document.querySelector("#zip");
 const select = document.querySelector("#country");
@@ -27,7 +26,7 @@ form.addEventListener("submit", (e) => {
   validateInputs();
   if (
     !email.classList.contains("pseudo") &&
-    !country.classList.contains("pseudo") &&
+    !select.classList.contains("pseudo") &&
     !city.classList.contains("pseudo") &&
     !zipCode.classList.contains("pseudo")
   ) {
@@ -45,7 +44,7 @@ const setError = (element, message) => {
   element.classList.add("pseudo");
   inputControl.classList.remove("success");
 };
-const setSuccess = (element, message) => {
+const setSuccess = (element) => {
   const inputControl = element.parentElement;
 
   const errorDisplay = inputControl.querySelector(".error");
@@ -102,37 +101,35 @@ const validateInputs = () => {
 
 // dark mode
 
+const elements = [form, formMiddle, email, zipCode, city, select];
+
+function setBackgroundWhite(elements, color) {
+  elements.forEach((element) => {
+    element.style.background = color;
+  });
+}
+function setcolorWhite(elements, color) {
+  elements.forEach((element) => {
+    element.style.color = color;
+  });
+}
+
 toggle.addEventListener("click", (e) => {
   e.preventDefault();
   if (toggle.classList.contains("fa-moon")) {
     toggle.classList.remove("fa-moon");
     toggle.classList.toggle("fa-sun");
     toggle.style.color = "black";
-    form.style.background = " white";
     signUpText.style.color = "black";
-    formMiddle.style.background = "white";
-    email.style.background = "white";
-    zipCode.style.background = "white";
-    city.style.background = "white";
-    select.style.background = "white";
-    select.style.color = "#292E33";
-    email.style.color = "#292E33";
-    zipCode.style.color = "#292E33";
-    city.style.color = "#292E33";
+    setBackgroundWhite(elements, "white");
+    setcolorWhite(elements, "#292E33");
   } else if (toggle.classList.contains("fa-sun")) {
     toggle.classList.remove("fa-sun");
     toggle.classList.toggle("fa-moon");
     toggle.style.color = "white";
     form.style.background = " #1f2327";
     signUpText.style.color = "white";
-    formMiddle.style.background = "#292e33";
-    email.style.background = "#292E33";
-    zipCode.style.background = "#292E33";
-    city.style.background = "#292E33";
-    select.style.background = "#292E33";
-    select.style.color = "white";
-    email.style.color = "white";
-    zipCode.style.color = "#white";
-    city.style.color = "white";
+    setBackgroundWhite(elements, "#292E33");
+    setcolorWhite(elements, "white");
   }
 });

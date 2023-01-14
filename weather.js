@@ -56,7 +56,6 @@ form.addEventListener("submit", (e) => {
       dataFeelsLike.innerText = data.main.feels_like;
       dataHumidity.innerText = data.main.humidity;
       dataWind.innerText = data.wind.speed;
-      // const iconCode = data.weather[0].icon;
       desc.innerText = data.weather[0].description;
     });
 });
