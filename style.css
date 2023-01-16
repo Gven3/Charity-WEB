@@ -157,6 +157,7 @@ ul > li > a {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-wrap: wrap-reverse;
   margin-top: 50px;
 }
 
@@ -386,7 +387,6 @@ ul > li > a {
   margin-top: 40px;
   display: flex;
   width: 85%;
-  /* height: 100%; */
   justify-content: space-between;
 }
 
@@ -394,7 +394,7 @@ ul > li > a {
 .secondItem,
 .thirdItem {
   width: 32%;
-  height: 560px;
+  height: 580px;
   background: #f3f2e7;
   border-radius: 12px;
   display: flex;
@@ -413,13 +413,13 @@ ul > li > a {
 .lowerItemContent {
   margin-top: 24px;
   width: 85%;
-  /* height: 40%; */
 }
 
 .lowerItemContent > h2 {
   font-family: "Rowdies";
   font-style: normal;
   font-weight: 300;
+  height: 96px;
   font-size: 24px;
   line-height: 32px;
   color: #3a1700;
@@ -799,6 +799,7 @@ ul > li > a {
   font-family: "Manrope";
   font-style: normal;
   font-weight: 400;
+  height: 128px;
   font-size: 16px;
   line-height: 32px;
   color: rgba(58, 23, 0, 0.5);
@@ -825,7 +826,6 @@ ul > li > a {
 }
 
 .videoDiv {
-  /* height: 65%; */
   width: 100%;
   margin-top: 70px;
   display: flex;
@@ -1137,6 +1137,7 @@ ul > li > a {
   font-family: "Rowdies";
   font-style: normal;
   font-weight: 300;
+  height: 64px;
   font-size: 24px;
   line-height: 32px;
   color: #3a1700;

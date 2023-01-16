@@ -92,12 +92,6 @@
     transform: translateY(-8px) rotate(-45deg);
   }
 
-  .first_container {
-    flex-direction: column-reverse;
-    margin-top: 100px;
-    align-items: center;
-  }
-
   .firstImage {
     width: 380px;
   }
